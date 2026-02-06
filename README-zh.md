@@ -1,3 +1,6 @@
+**Chinese/中文** | [[Spanish/Español/西班牙语]](https://github.com/JDA-XJH/Let-Me-Search-For-You_ES/blob/main/README.md)
+
+# 此存储库是从中文翻译为西班牙语的，源存储库: [https://github.com/FrecklyComb1728/Let-Me-Search-For-You](https://github.com/FrecklyComb1728/Let-Me-Search-For-You)
 # Let Me Search That For You
 
 一个有趣的搜索引导工具，解决手残党不会使用浏览器的问题（）。支持百度、Google和Bing三大搜索引擎。
@@ -32,4 +35,5 @@
 ## 致谢
 
 感谢 [@bangbang93](http://weibo.com/bangbang93) 的开发贡献。
+
 
