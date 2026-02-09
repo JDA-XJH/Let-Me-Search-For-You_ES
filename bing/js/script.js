@@ -1,6 +1,7 @@
 /**
  * Created by bangbang on 14/10/10.
  * 二改 by Mifeng on 25/4/30
+ * 三改 by JDA-XJH on 09/02/2026 (translate to spanish)
  */
 $(document).ready(function (){
     new Clipboard('#copy')
@@ -21,12 +22,12 @@ $(document).ready(function (){
                 link = location.origin + '/s/' + data['uniqId'];
               }
               $('#link').show();
-              $('#instructions').text('复制下面的地址');
+              $('#instructions').text('Copia el link de abajo');
               $('#lmbtfyLink').val(link).focus().select();
             },
             error: function () {
               $('#link').show();
-              $('#instructions').text('复制下面的地址');
+              $('#instructions').text('Copia el link de abajo');
               $('#lmbtfyLink').val(link).focus().select();
             }
           });
@@ -82,7 +83,7 @@ $(document).ready(function (){
                               left: $search.offset().left + $search.width()/2 + 'px',
                               top: $search.offset().top + $search.height()/2 + 'px'
                           }, 1000, function () {
-                              $instructions.html('<strong>这对你而言就是这么困难么？</strong>');
+                              $instructions.html('<strong>¿ESO ES TAN DIFÍCIL PARA TI?(INÚTIL)</strong>');
                               setTimeout(function (){
                                   window.location = 'https://www.bing.com/search?q=' + encodeURIComponent(kw);
                               }, 2000);

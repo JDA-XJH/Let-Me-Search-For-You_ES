@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>让我为你搜索 | Let Me Search That For You</title>
+  <title>Déjame buscarte | Let Me Search That For You | 让我为你搜索</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -43,7 +43,7 @@
       </div>
       <div class="max-w-2xl mx-auto bg-white/10  rounded-2xl p-3 shadow-lg border-white/5">
         <p class="text-lg text-primary-700" id="subtitle">
-          选择你喜欢的搜索引擎，快速获取你需要的信息
+          Elija su motor de búsqueda preferido para obtener los informaciónes que necesitas
         </p>
       </div>
     </div>
@@ -60,7 +60,7 @@
       <div class="flex flex-col md:flex-row justify-between items-center">
         <div class="mb-4 md:mb-0">
           <p class="text-primary-600 text-sm" id="copyright">
-            © Let Me Search For You. 保留所有权利。
+            © Let Me Search For You. Reservados todos los derechos.
           </p>
         </div>
         <div class="flex space-x-6" id="footer-links">
@@ -76,11 +76,11 @@
       try {
         const response = await fetch('config.json');
         if (!response.ok) {
-          throw new Error('无法加载配置文件');
+          throw new Error('No se puede cargar el archivo de configuración');
         }
         return await response.json();
       } catch (error) {
-        console.error('加载配置文件失败:', error);
+        console.error('No se pudo cargar el archivo de configuración:', error);
         return null;
       }
     }
@@ -107,12 +107,12 @@
               <h2 class="text-2xl font-bold text-primary-800 mb-2">${engine.name}</h2>
               <p class="text-primary-600 text-center">${engine.description}</p>
               <div class="mt-6 inline-flex items-center text-primary-600 font-medium bg-gradient-to-r from-primary-100 to-primary-200 px-4 py-2 rounded-full shadow-sm">
-                <span>立即使用</span>
+                <span>Usalo!</span>
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1 group-hover:translate-x-1 transition-transform" viewBox="0 0 20 20" fill="currentColor">
                   <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
                 </svg>
               </div>
-              ${engine.recommended ? '<div class="absolute top-4 right-4 bg-gradient-to-r from-primary-400 to-primary-500 text-white text-xs px-2 py-1 rounded-full font-medium shadow-md">推荐</div>' : ''}
+              ${engine.recommended ? '<div class="absolute top-4 right-4 bg-gradient-to-r from-primary-400 to-primary-500 text-white text-xs px-2 py-1 rounded-full font-medium shadow-md">Recomendido</div>' : ''}
             </div>
           </a>
         `;

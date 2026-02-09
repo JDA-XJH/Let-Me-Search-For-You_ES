@@ -1,6 +1,7 @@
 /**
  * Created by bangbang on 14/10/10.
  * 二改 by Mifeng on 25/4/30
+ * 三改 by JDA-XJH on 09/02/2026 (translate to spanish)
  */
 $(document).ready(function (){
     new Clipboard('#copy')
@@ -21,12 +22,12 @@ $(document).ready(function (){
                 link = location.origin + '/s/' + data['uniqId'];
               }
               $('#link').show();
-              $('#instructions').text('复制下面的地址');
+              $('#instructions').text('Copia el link de abajo');
               $('#lmbtfyLink').val(link).focus().select();
             },
             error: function () {
               $('#link').show();
-              $('#instructions').text('复制下面的地址');
+              $('#instructions').text('Copia el link de abajo');
               $('#lmbtfyLink').val(link).focus().select();
             }
           });
@@ -60,12 +61,12 @@ $(document).ready(function (){
           var $instructions = $('#instructions');
           var $arrow = $('#arrow');
           setTimeout(function (){
-              $instructions.text('1、把鼠标放到输入框上');
+              $instructions.text('1, Coloque el cursor del ratón sobre el cuadro de entrada');
               $arrow.show().animate({
                   left: $kw.offset().left + 10 + 'px',
                   top: ($kw.offset().top + $kw.height()/2) + 'px'
               }, 2000, function (){
-                  $instructions.text('2、输入你的问题');
+                  $instructions.text('2, Ingrese su pregunta');
                   $arrow.hide();
                   var $kw = $('#kw');
                   $kw.focus();
@@ -75,14 +76,14 @@ $(document).ready(function (){
                       i++;
                       if (i > kw.length){
                           clearInterval(interval);
-                          $instructions.text('3、按下“Google 搜索”按钮');
+                          $instructions.text('3, Clica Boton de “Google Search”');
                           $arrow.show();
                           var $search = $('#search');
                           $arrow.animate({
                               left: $search.offset().left + $search.width()/2 + 'px',
                               top: $search.offset().top + $search.height()/2 + 'px'
                           }, 1000, function () {
-                              $instructions.html('<strong>这对你而言就是这么困难么？</strong>');
+                              $instructions.html('<strong>¿ESO ES TAN DIFÍCIL PARA TI?(INÚTIL)</strong>');
                               setTimeout(function (){
                                   window.location = 'https://www.google.com/search?q=' + encodeURIComponent(kw);
                               }, 2000);
