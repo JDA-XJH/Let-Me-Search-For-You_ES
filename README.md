@@ -1,4 +1,4 @@
-[Chinese/中文](https://github.com/JDA-XJH/Let-Me-Search-For-You_ES/blob/main/README-zh.md) | **Spanish/Español/西班牙语**
+**Spanish/Español/西班牙语** | [Chinese/中文](https://github.com/JDA-XJH/Let-Me-Search-For-You_ES/blob/main/README-zh.md)
 
 # Traduccido del chino al español. Version original: [https://github.com/FrecklyComb1728/Let-Me-Search-For-You](https://github.com/FrecklyComb1728/Let-Me-Search-For-You)
 # Déjame buscar eso por ti
