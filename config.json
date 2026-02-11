@@ -1,19 +1,19 @@
 {
   "title": "Let Me Search That For You",
-  "subtitle": "手残党专用搜索导航页",
+  "subtitle": "Página de navegación del buscador para los inutiles",
   "engines": [
     {
       "id": "bing",
-      "name": "必应",
-      "description": "微软智能搜索引擎，提供全面的搜索体验",
+      "name": "Bing",
+      "description": "El motor de búsqueda inteligente de Microsoft ofrece una experiencia de búsqueda integral.",
       "url": "bing/",
       "icon": "https://www.bing.com/favicon.ico",
       "recommended": true
     },
     {
       "id": "baidu",
-      "name": "百度",
-      "description": "中文搜索首选，提供本地化搜索服务",
+      "name": "BaiDu",
+      "description": "La búsqueda en chino es la opción preferida y ofrece servicios de búsqueda localizados.",
       "url": "baidu/",
       "icon": "https://www.baidu.com/favicon.ico",
       "recommended": true
@@ -21,14 +21,14 @@
     {
       "id": "google",
       "name": "Google",
-      "description": "全球最大的搜索引擎，提供精准搜索结果",
+      "description": "El motor de búsqueda más grande del mundo proporciona resultados de búsqueda precisos.",
       "url": "google/",
       "icon": "https://t1.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&size=64&url=https://www.google.com",
       "recommended": true
     }
   ],
   "footer": {
-    "copyright": "© Let Me Search For You. 保留所有权利。",
+    "copyright": "© Let Me Search For You | Dejame buscarte. Reservados todos los derechos.",
     "links": [
       {
         "name": "GitHub",
